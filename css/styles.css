@@ -87,11 +87,14 @@ _______________________________________________________________________________*
 ______________________________________________________________________________*/
 .fun{
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
 }
 .gif{
     max-width: 100%; 
+    margin-left: 10rem;
+    margin-right: 5rem;
+    padding: 5%;
 }
 /*My profile pic
 _____________________________________________________________________________ */
@@ -213,6 +216,22 @@ _____________________________________________________________________________*/
   }
 }
 @media (max-width: 768px){
+    html, body{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    /*navbar
+    ________________________________________________________________________________*/
+    .navbar{
+        padding: 0.8rem;
+    }
+    .navbar li{
+        padding-right: 20px;
+    }
+    .nav-link{
+        font-size: 1em !important;
+    }
     .carousel-caption{
         top: 45%;
        }
@@ -227,6 +246,11 @@ _____________________________________________________________________________*/
        .display-4{
            font-size: 250%;
        }
+       .gif{
+        max-width: 100%; 
+        padding: 5%;
+        margin-left: 5rem;
+    }
 }
 @media (max-width: 576px){
     .carousel-caption{
@@ -242,6 +266,27 @@ _____________________________________________________________________________*/
        }
        .social a{
         padding: 0.5rem;
+       }
+       .gif{
+        max-width: 100%; 
+        margin-left: 4rem;
+        padding: 5%;
     }
+}
+@media (max-width: 320px){
+    .navbar{
+        padding: 0.4rem;
+    }
+    .navbar li{
+        padding-right: 10px;
+    }
+    .nav-link{
+        font-size: 0.8em !important;
+    }
+    .gif{
+        max-width: 100%; 
+        margin-left: 2rem;
+        padding: 10%;
+    } 
 
 }
