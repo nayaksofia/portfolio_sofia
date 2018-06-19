@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!--Bootstrap Font Awesome-->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--CSS file Reference-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sofia's Responsive Portfolio Website</title>
+</head>
+
+<!--Use Scrollspy-->
+<body data-spy="scroll" data-target="#navbar-site" data-offset="0">
+    <!--Navigation-->
+
+    <nav id="navbar-site" class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-none d-sm-inline-block">
+                <img class="logo-img rounded" src="img/udacity.png" alt="udacity logo">
+            </a>
+
+            <!--Adding Hamburger Menu Button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav"
+                aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span><!--Navbar Icon-->
+            </button>
+
+            <div class="collapse navbar-collapse" id="myTogglerNav">
+                <ul class="navbar-nav ml-sm-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!--Adding Dropdown Navigation-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuredWorkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Featured Works 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="featuredWorkDropdown">
+                                <a class="dropdown-item" href="#udacityProjects">UDACITY FEND PROJECTS</a>
+                                <a class="dropdown-item" href="#ieeePapers">IEEE PAPER PUBLICATIONS</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">OTHER WORKS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#mySkills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutMe">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+                </ul>
+                <!--Adding Form Element-->
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <div class="input-group">
+                        <label class="sr-only" for="search">Search</label>
+                        <input class="form-control mr-sm-2" type="text" id="search" placeholder="Search for.." aria-label="search">
+                        <div class="input-grup-append">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Go</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- <span class="navbar-text d-none d-xl-inline-block">Google Udacity India Scholarship Portfolio Project</span> -->
+            </div><!--collapse-->
+        </div><!--container-->
+    </nav> <!--nav-->
+
+    <!--Image Slider--> 
+    <div class="carousel slide" id="featured" data-ride="carousel">
+        <div class="carousel-inner">
+            <!--Use of Carousel Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#featured" data-slide-to="0" class="active"></li>
+                <li data-target="#featured" data-slide-to="1"></li>
+                <li data-target="#featured" data-slide-to="2"></li>
+                <li data-target="#featured" data-slide-to="3"></li>
+                <li data-target="#featured" data-slide-to="4"></li>
+                <li data-target="#featured" data-slide-to="5"></li>
+                <li data-target="#featured" data-slide-to="6"></li>
+            </ol>
+
+            <div class="carousel-item active">
+                <img class="img-fluid d-block w-100" src="img/bgimag_2.jpg" alt="First Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 text-center font-weight-bold text-info">Front-End Web Developer</h1>
+                    <h2 class="font-italic text-center font-weight-bold text-info">Sofia Nayak</h2>
+                </div> <!--carousel-caption-->
+            </div><!--carousel-item-->
+            <div class="carousel-item">
+                <img class="img-fluid d-block w-100" src="img/google_udacity_recipient_bgimg.png" alt="Second Slide">
+            </div><!--carousel-item-->
+            <div class="carousel-item">
+                <img class="img-fluid d-block w-100" src="img/sofi_portfolio_coding_pic1.jpg" alt="Third Slide">
+            </div><!--carousel-item-->
+            <div class="carousel-item">
+                <img class="img-fluid d-block w-100" src="img/animal_trading_card.jpg" alt="Fourth Slide">
+            </div><!--carousel-item-->
+            <div class="carousel-item">
+                <img class="img-fluid d-block w-100" src="img/pujari_sir3.JPG" alt="Fifth Slide">
+            </div><!--carousel-item-->
+            <div class="carousel-item">
+                <img class="img-fluid d-block w-100" src="img/Ecast_2013_pic.JPG" alt="Sixth Slide">
+            </div><!--carousel-item-->
+            <div class="carousel-item">
+                <img class="img-fluid d-block w-100" src="img/bgimage_1.jpg" alt="Seventh Slide">
+            </div><!--carousel-item-->
+            <!--Adding Prev and Next Controls-->
+            <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> <!--carousel-inner-->
+    </div><!--carousel-->
+
+    <!--Jumbotron-->
+    <div class="container-fluid padding">
+        <header class="jumbotron">
+            <div class="display-3 mb-4"><em>Hello, World!</em></div>
+            <br>
+            <p class="h3"><em>Welcome to my design portfolio.</em></p>
+            <hr class="my-4">
+            <p><em>This is Sofia Nayak. Front-End Web Developer, from Sambalpur, Odisha, India.</em></p>
+            <p>
+                <em>
+                    <strong>Google India Scholar 2018.</strong>
+                </em>
+            </p>
+        </header>
+    </div> <!--container-fluid -->
+
+    <!--Featured Work Section-->
+
+    <!--Udacity Fend Projects: cards-->
+    <div class="container-fluid padding" id="udacityProjects">
+    <div class="row featured text-center">
+        <div class="col-12"> 
+        <h1 class="display-4">UDACITY FEND PROJECTS</h1>
+        </div>
+        <hr>
+    </div> <!--row-->
+    </div> <!--container-->
+
+   <!--cards-->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <section class="card mb-5" id="trading_card">
+                    <img class="card-img-top" src="img/animal_trading_card_1.jpg" alt="1st card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Animal Trading Card</h5>
+                        <a href="https://nayaksofia.github.io/animal_trading_card/" class="btn btn-primary">See The Page</a>
+                    </div>
+                </section>
+            </div><!--column-->
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <section class="card mb-5" id="pixel_art">
+                    <img class="card-img-top" src="img/pixel_art_maker_1.jpg" alt="2nd card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pixel Art Maker</h5>
+                        <a href="https://nayaksofia.github.io/pixel_art_maker/" class="btn btn-primary">See The Page</a>
+                    </div>
+                </section>
+            </div><!--column-->
+
+            <div class="col-xs-12 col-md-4">
+                <section class="card mb-5" id="article_mockup">
+                    <img class="card-img-top" src="img/mock_up_to_article_1.jpg" alt="3rd card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mock Up To Article</h5>
+                        <a href="https://nayaksofia.github.io/article_to_mockup/" class="btn btn-primary">See The Page</a>
+                    </div>
+                </section>
+            </div><!--column-->
+        </div><!--row-->
+    </div> <!--container-fluid -->
+
+    <!--IEEE Paper Publications: cards-->
+        <div class="container-fluid padding" id="ieeePapers">
+        <div class="row featured text-center">
+        <div class="col-12"> 
+        <h1 class="display-4">IEEE Paper Publications</h1>
+        </div>
+         <hr>
+        </div> <!--row-->
+        </div> <!--container-->
+  <!--cards-->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <section class="card mb-5" id="ieee_paper1">
+                    <img class="card-img-top" src="img/ieee_moving_object_tracking.jpg" alt="First card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Moving Object Tracking Applications With FPGA</h5>
+                        <a href="https://ieeexplore.ieee.org/document/7033990/" class="btn btn-primary">Click For Details</a>
+                    </div>
+                </section>
+            </div><!--column-->
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <section class="card mb-5" id="ieee_paper2">
+                    <img class="card-img-top" src="img/ieee_adc_dac.jpg" alt="Second card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ADC DAC With FPGA</h5>
+                        <a href="https://ieeexplore.ieee.org/document/7033995/" class="btn btn-primary">Click For Details</a>
+                    </div>
+                </section>
+            </div><!--column-->
+
+            <div class="col-xs-12 col-md-4">
+                <section class="card mb-5" id="ieee_paper3">
+                    <img class="card-img-top" src="img/ieee_edge_detection.jpg" alt="Third card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Edge Detection With FPGA</h5>
+                        <a href="https://ieeexplore.ieee.org/document/7033990/" class="btn btn-primary">Click For Details</a>
+                    </div>
+                </section>
+            </div><!--column-->
+        </div><!--row-->
+    </div> <!--container-fluid -->
+
+    <!--SKILLS-->
+        <div class="container-fluid padding" id="mySkills">
+        <div class="row featured text-center">
+        <div class="col-12"> 
+        <h1 class="display-4">Skills</h1>
+        </div>
+         <hr>
+        </div> <!--row-->
+        </div> <!--container-->
+
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                        <i class="fab fa-html5 fa-5x" aria-hidden="true"></i>
+                        <h3>HTML5</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fab fa-css3 fa-5x" aria-hidden="true"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <i class="fab fa-js-square fa-5x" aria-hidden="true" ></i>
+                <h3>JavaScript</h3>
+            </div>
+        </div> <!--row-->
+        <!-- <hr class="my-4"> -->
+    </div> <!--container-fluid-->
+
+    <!--Two Column Section-->
+    <!--About Me-->
+    <div class="container-fluid padding" id="aboutMe">
+        <div class="row featured text-center padding">
+            <div class="col-12">
+                <h1 class="display-4">About Me:</h1>
+            </div><!--col-->
+             <hr>
+        </div> <!--row-->
+    </div><!--container-fluid-->
+
+     <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-lg-6 mt-4">
+                <!--Social Media Icon: incomplete[Change to one horizontal position]-->
+                <div class="row padding">
+                    <div class="col-12 social padding">
+                            <!-- <a class="facebook" href="#"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i></a>       -->
+                            <a class="linkedin" href="https://www.linkedin.com/in/sofia-nayak-7177132b/
+                            "><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>      
+                            <a class="twitter" href="https://twitter.com/nayak_sofia"><i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i></a>      
+                            <a class="github" href="https://github.com/nayaksofia"><i class="fab fa-github-square fa-2x" aria-hidden="true"></i></a>      
+                            <a class="youtube" href="http://www.youtube.com/user/Sabitry1"><i class="fab fa-youtube-square fa-2x" aria-hidden="true"></i></a>      
+                            <a class="medium" href="https://medium.com/@sofianayak"><i class="fab fa-medium fa-2x" aria-hidden="true"></i></a>      
+                    </div><!--col-->
+                </div> <!--row-->
+                <hr>
+                <p><em>Hi! This is Sofia Nayak. Front-End Web Developer.</em></p>
+                <p>I hold <em><strong>M.tech degree in Embedded System Design</strong></em> from Sambalpur University Institute of Information Technology <a href="https://suiit.ac.in/">[SUIIT]</a> , Jyoti Vihar, Burla, Odisha, India.</p>
+                <p><em>I achieved the <strong>Google Udacity India Front-End Web Developer Scholarship Challenge </strong></em> in the month of May,2018.  <em><strong>#GoogleIndiaScholar :)</strong></em></p>
+            </div> <!--colum-->
+                <div class="col-lg-6 mt-4">
+                    <img class="my_dp img-fluid img-thumbnail" src="img/sofia_1.jpg" alt="display pic">
+                </div><!--col-->
+        </div> <!--row-->
+    </div> <!--container-fluid-->
+
+   <!--Fun Emoji Section-->
+   <button class="fun" data-toggle="collapse" data-target="#emoji">Click Me :)</button>
+   <div id="emoji" class="collapse">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/animated-book-image-0036.gif" alt="book">
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/animated-flower-image-0027.gif" alt="flower">
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/animated-thank-you-image-0078.gif" alt="thank you">
+            </div>
+        </div>
+    </div>
+   </div>
+
+<!--Login Form-->
+<div class="modal-dialog text-center" id="login">
+    <div class="col-sm-9 main-section">
+        <div class="modal-content">
+            <div class="col-12 user-img">
+                <img class="img-fluid" src="img/user_img.png" alt="face img">
+            </div> <!--col-->
+
+            <div class="col-12 form-input">
+                <form>
+                    <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter Name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter Email">
+                    </div>
+
+                    <div class="form-group">
+                      <input type="password" class="form-control" placeholder="Enter Password">
+                    </div>  
+                    <button type="submit" class="btn btn-success">Login</button>
+                </form>
+            </div> <!--col-->
+
+           <div class="col-12 forgot">
+               <a href="#">Forgot Password?</a>
+           </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer>
+    <div class="container-fluid padding">
+    <div class="row text-center padding">
+    <div class="col-12">
+     <hr class="light">
+     <h6 class="e-mail">E-mail: nayaksofia_18@outlook.com</h6>
+     <h6>Sofia&copy;2018</h6>
+    </div> <!--col-->  
+    </div> <!--row-->
+    </div> <!--container-fluid-->             
+</footer>
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <!--JS file Reference-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

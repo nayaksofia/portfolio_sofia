@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek,cyrillic');
+/*Logo image style
+___________________________________________________________________*/
+.logo-img{ 
+    width: 90px;  
+}
+/*Background Image
+_____________________________________________________________________________________*/
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: url('../img/background-25.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+}
+/*navbar
+________________________________________________________________________________*/
+.navbar{
+    padding: 0.8rem;
+}
+.navbar li{
+    padding-right: 20px;
+}
+.nav-link{
+    font-size: 1.1em !important;
+}
+
+/*carousel sections
+____________________________________________________________________________________ */
+/* .carousel-inner img{
+    width: 100%;
+    height: 100%;
+} */
+.carousel-caption{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+}
+.carousel-caption h1{
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px #fff;
+}
+.carousel-caption h2{
+    font-size: 400%;
+    font-weight: 500;
+    text-shadow: 3px 3px 10px #fff;
+}
+
+/*jumbotron
+_______________________________________________________________________________*/
+.jumbotron{
+    padding: 1rem;
+    border-radius: 0;
+}
+/*padding
+_______________________________________________________________________________*/
+.padding{
+    padding-bottom: 2rem;
+}
+.featured{
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.featured hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+/*Skills Icons Style
+_______________________________________________________________________________*/
+.fa-html5 {
+    color: lightsalmon;
+}
+.fa-css3{
+    color: lightblue;
+}
+.fa-js-square{
+    color: lightpink;
+}
+.fa-html5, .fa-css3, .fa-js-square{
+    margin: 1rem;
+}
+/*Fun Emoji Section
+______________________________________________________________________________*/
+.fun{
+    width: 100%;
+    margin-bottom: 2rem;
+
+}
+.gif{
+    max-width: 100%; 
+}
+/*My profile pic
+_____________________________________________________________________________ */
+.my_dp{
+    width: 100%;
+    height: 75%;
+    display: block;
+    border-radius: 40px;
+    padding: 3%;
+    margin: auto;
+}
+/*Social media section
+__________________________________________________________________________________*/
+.social a{
+  padding: 1rem;
+}
+/* .facebook{
+    color: #3b5998;
+} */
+.linkedin{
+    color: #0077b5; 
+}
+.twitter{
+    color: #00aced;
+}
+.github{
+    color: #000000;
+}
+.youtube{
+    color: #bb0000; 
+}
+.medium{
+    color: #66cdaa;
+}
+/* .facebook:hover, */
+.linkedin:hover,
+.twitter:hover,
+.github:hover,
+.youtube:hover,
+.medium:hover{
+    color: #ee4116;
+}
+/*Login Form Section
+_________________________________________________________________________________________ */
+.main-section{
+    margin: 0 auto;
+    margin-top: 130px;
+    padding: 0;
+}
+.modal-content{
+    background-color: lightpink;
+    opacity: 0.95;
+    padding: 0 18px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #848484;
+}
+.user-img img {
+    height: 120px;
+    width: 120px;
+}
+.user-img{
+    margin-top: -80px;
+    margin-bottom: 45px;
+}
+.form-group{
+    margin-bottom: 25px;
+}
+.form-group input{
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+.form-input button{
+width: 40%;
+margin: 5px 0 25px;
+}
+.btn-success{
+    background-color: rgb(161, 45, 45);
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 7px 14px;
+    border: 2px solid #daf1ff;
+}
+.btn-success:hover{
+    background-color: darkred;
+    border: 2px solid #daf1ff;; 
+}
+.forgot{
+    padding: 5px 0 25px;
+}
+.forgot a{
+    color: rgb(240, 77, 12);
+    font-size: 15px;
+    font-weight: bold;
+}
+/*footer section
+___________________________________________________________________________*/
+footer{
+    /* background-color: #159ad8; */
+    color: #1f1e1e;
+    padding-top: 2rem;
+}
+hr.light{
+    border-top: 1px solid #66cdaa;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/*Media Queries
+_____________________________________________________________________________*/
+@media (max-width: 992px){
+  .social a{
+      padding: 1rem;
+  }
+}
+@media (max-width: 768px){
+    .carousel-caption{
+        top: 45%;
+       }
+       .carousel-caption h1{
+           font-size: 350%;
+       }
+       .carousel-caption h2{
+           font-size: 140%;
+           font-weight: 400;
+           padding-bottom: 0.2rem;
+       }
+       .display-4{
+           font-size: 250%;
+       }
+}
+@media (max-width: 576px){
+    .carousel-caption{
+        top: 40%;
+       }
+       .carousel-caption h1{
+           font-size: 250%;
+       }
+       .carousel-caption h2{
+           font-size: 110%;
+           font-weight: 400;
+           padding-bottom: 0.2rem;
+       }
+       .social a{
+        padding: 0.5rem;
+    }
+
+}
